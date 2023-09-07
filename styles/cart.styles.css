@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #eee;
+}
+
+.heading {
+    margin-top: 25px;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #444;
+    font-size: 4rem;
+}
+
+.heading span {
+    line-height: 1px;
+    border-bottom: 4px solid #f79f1f;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    padding: 1.5rem 7%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #444;
+}
+
+header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+}
+
+header .nav-menu .active {
+    color: #666;
+    border-bottom: 2px solid #666;
+}
+
+header .nav-menu li a {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #444;
+}
+
+header .nav-menu li a:hover {
+    letter-spacing: 0.2rem;
+}
+
+header .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+header .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+}
+
+@media (max-width: 750px) {
+    header .hamburger {
+        display: block;
+    }
+
+    header .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 5000;
+    }
+    header .active {
+        left: 0%;
+    }
+
+    header .nav-menu li {
+        margin: 16px 0;
+    }
+}
+
+/* main section */
+section {
+    margin-top: 20px;
+    padding: 2rem 7%;
+}
+
+.heading {
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #444;
+    font-size: 4rem;
+}
+
+.heading span {
+    line-height: 1px;
+    border-bottom: 4px solid #f79f1f;
+}
+
+/* Cart empty */
+#for-info {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+section .box-conatainer {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+}
+
+/* Cart list */
+#cart-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #666;
+    margin: 12px auto;
+}
+
+.item-list {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    font-size: 1.9rem;
+    border-bottom: 1px solid black;
+}
+
+.checkout {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    font-size: 1.9rem;
+    font-weight: 600;
+    background: rgb(203, 239, 189);
+    padding: 7px 10px;
+}
+
+.checkout button{
+    cursor: pointer;
+    padding: 7px;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    background: rgb(46, 41, 134);
+    color: #ffffff;
+}
+
+.checkout button:hover {
+    letter-spacing: 0.1rem;
+}
