@@ -11,7 +11,7 @@ const cartCheckOut = (item) => {
     const forInfo = document.getElementById('for-info');
     forInfo.innerText = "CheckOut Complete, Please Wait!";
     setTimeout(() => {
-        window.open(`${window.location.origin}/pages/myCourses.html`, '_self')
+        window.open(`${window.location.origin}/Course-Enrollment/pages/myCourses.html`, '_self')
     },2000)
 }
 
