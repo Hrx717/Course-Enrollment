@@ -1,3 +1,11 @@
+//header responsiveness
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+
 const idToImage = ['empty', 'python.jpg', 'dataScience.jpg',
 'chatgpt.jpg','ielts.png','DSA.jpg','cyberSecurity.jpg','digitalMarketing.jpg',
 'englishBasics.jpg', 'productManagementjpg.jpg'];
